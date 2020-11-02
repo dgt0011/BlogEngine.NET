@@ -239,7 +239,7 @@ public class Updater  : WebService {
             int version = int.Parse(BlogSettings.Instance.Version().Replace(".", ""));
             if (version < 3300)
             {
-                DeleteDir("\\App_Data\\datastore\\widgets");    
+                DeleteDir("\\App_Data\\datastore\\widgets");
             }
 
             ReplaceDir("\\Account");
@@ -743,7 +743,7 @@ public class Updater  : WebService {
     //    if (action == Operation.Copy)
     //        BlogEngine.Core.Utils.Log(string.Format("{0} from {1} to {2}", s, from, to));
     //    else
-    //    BlogEngine.Core.Utils.Log(string.Format("{0} from {1}", s, from));   
+    //    BlogEngine.Core.Utils.Log(string.Format("{0} from {1}", s, from));
     //}
 }
 
