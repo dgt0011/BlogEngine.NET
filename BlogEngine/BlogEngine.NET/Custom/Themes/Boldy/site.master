@@ -17,11 +17,11 @@
 <html lang="en">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="shortcut icon" href="~/Content/images/blog/blogengine.ico" type="image/x-icon" />
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />  
+	<link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
     <link href="~/scripts/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
     <link href="~/scripts/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/XRegExp.js"></script>
@@ -43,16 +43,16 @@
 				</div>
 				<div id="topSearch">
 					<input type="submit" value="" id="searchsubmit" onkeypress="BlogEngine.search('<%=Utils.RelativeWebRoot%>');" onclick="BlogEngine.search('<%=Utils.RelativeWebRoot%>');return false;"/>
-					<input type="text" value="<%=BlogSettings.Instance.SearchDefaultText%>" 
-						onblur="$(this).animate({width: '100'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')" 
-						onfocus="$(this).animate({width: '215'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')" 
+					<input type="text" value="<%=BlogSettings.Instance.SearchDefaultText%>"
+						onblur="$(this).animate({width: '100'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')"
+						onfocus="$(this).animate({width: '215'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')"
 						onkeypress="if(event.keyCode==13) return BlogEngine.search('<%=Utils.RelativeWebRoot%>')" id="searchfield" />
 				</div>
             </div>
 			<div class="container header-title">
 				<p><%=BlogSettings.Instance.Description %></p>
 				<h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
-				
+
 				<div id="topSocial">
 					<ul>
 						<li><a href="[CUSTOMFIELD|THEME|Boldy|Facebook Account|/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_facebook.png" alt="Join Us on Facebook!" /></a></li>
@@ -60,7 +60,7 @@
 						<li><a href="[CUSTOMFIELD|THEME|Boldy|Linkedin Account|/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_linkedin.png" alt="LinkedIn" /></a></li>
 						<li><a href="[CUSTOMFIELD|THEME|Boldy|RSS Link|/syndication.axd/]" rel="external nofollow"><img runat="server" src="~/Custom/Themes/Boldy/images/ico_rss.png" alt="Subcribe to Our RSS Feed" /></a></li>
 					</ul>
-				</div>	
+				</div>
 			</div>
         </header>
         <div class="container">
